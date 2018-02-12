@@ -26,10 +26,16 @@ module.exports = {
     ],
   },
   plugins: [
-    new CopyWebpackPlugin([{
-      from: 'src/index.html',
-      to: '.'
-    }]),
+    new CopyWebpackPlugin([
+      {
+        from: 'src/index.html',
+        to: '.'
+      },
+      {
+        from: 'src/assets',
+        to: './assets'
+      }
+    ]),
   ],
   devServer: {
     contentBase: path.join(__dirname, "dist"),

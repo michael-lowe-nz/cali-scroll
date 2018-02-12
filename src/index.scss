@@ -1,1 +1,20 @@
-@import '../node_modules/bulma/bulma.sass'
+@import './sass/colors';
+@import '../node_modules/bulma/bulma.sass';
+
+.hero-1 {
+  position: relative;
+  text-align: center;
+  width: 100%;
+}
+
+.hero-1-txt {
+  position: absolute;
+  bottom: 0px;
+  left: 16px;
+  opacity: 0;
+  transition: opacity .25s ease-in-out;
+}
+
+.fade-in {
+  opacity: 1;
+}
