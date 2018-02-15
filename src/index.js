@@ -14,7 +14,7 @@ scroller
     container: '.scroll', // required (for sticky)
     graphic: '.scroll__graphic', // required (for sticky)
     offset: 0.4, // optional, default = 0.5
-    debug: true // optional, default = false
+    debug: false // optional, default = false
   })
   .onStepEnter((obj, index, another) => {
     console.log('Step enter:', obj, index, another)

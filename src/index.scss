@@ -2,6 +2,10 @@
 @import '../node_modules/bulma/bulma.sass';
 @import '../node_modules/animate.css/animate.css';
 
+#scroll {
+  position: relative;
+}
+
 .hero-1-img, .hero-2-img, {
   position: relative;
   text-align: center;
@@ -57,3 +61,69 @@
 			background-color: #ddd;
 			border: 1px solid #000;
 		}
+
+    .scroll__graphic .chart {
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  -moz-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+
+// .hero-1-img, .hero-2-img, {
+//   position: relative;
+//   text-align: center;
+//   width: 100%;
+// }
+//
+// .hero-1-txt, .hero-2-txt {
+//   top: 0px;
+//   left: 25px;
+//   position: absolute;
+// }
+//
+// .back-image {
+//   position: fixed;
+//   text-align: center;
+//   width: 100%;
+//   z-index: -3;
+//
+//   img {
+//     height: 100vh;
+//     width: auto;
+//   }
+// }
+//
+// .hidden {
+//   display: none;
+// }
+//
+// .scroll__graphic {
+// 			position: absolute;
+// 			top: 0;
+// 			left: 0;
+// 			bottom: auto;
+// 			background-color: #fff;
+// 			-webkit-transform: translate3d(0, 0, 0);
+// 			-moz-transform: translate3d(0, 0, 0);
+// 			transform: translate3d(0, 0, 0);
+// 		}
+// 		.scroll__graphic.is-fixed {
+// 			position: fixed;
+// 		}
+// 		.scroll__graphic.is-bottom {
+// 			bottom: 0;
+// 			top: auto;
+// 		}
+// 		.chart {
+// 			position: absolute;
+// 			right: 1rem;
+// 			top: 50%;
+// 			-moz-transform: translateY(-50%);
+// 			-webkit-transform: translateY(-50%);
+// 			transform: translateY(-50%);
+// 			background-color: #ddd;
+// 			border: 1px solid #000;
+// 		}
