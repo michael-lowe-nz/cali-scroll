@@ -1,8 +1,9 @@
 import $ from 'jquery'
 import scrollama from 'scrollama';
+import 'animate.css/animate.min.css';
 
 require('./index.scss');
-require('../node_modules/animate.css/animate.css');
+// require('../node_modules/animate.css/animate.css');
 
 // instantiate the scrollama
 const scroller = scrollama();
@@ -16,10 +17,11 @@ scroller
     debug: false // optional, default = false
   })
   .onStepEnter((obj, index, another) => {
-    console.log('step enter:', obj, index);
+    console.log('Step enter:', obj, index, another)
     if(obj.index === 0) {
-      console.log('adding fade-in');
-      $('.hero-1-txt').addClass('fade-in');
+      console.log('adding slideInLeft');
+      $('.hero-1-txt').removeClass('hidden');
+      $('.hero-1-txt').addClass('slideInLeft');
     }
   })
   .onStepExit((obj, index) => {
@@ -27,8 +29,8 @@ scroller
     //   $('.hero-1-txt').removeClass('fade-in');
     // }
   })
-  .onContainerEnter(() => console.log('Eventing cont-enter'))
-  .onContainerExit(() => console.log('Eventing cont-exit'))
+  // .onContainerEnter(() => console.log('Eventing cont-enter'))
+  // .onContainerExit(() => console.log('Eventing cont-exit'))
 
 // scroller
 //   .setup({

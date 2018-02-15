@@ -1,20 +1,31 @@
 @import './sass/colors';
 @import '../node_modules/bulma/bulma.sass';
+@import '../node_modules/animate.css/animate.css';
 
-.hero-1 {
+.hero-1-img, .hero-2-img, {
   position: relative;
   text-align: center;
   width: 100%;
 }
 
-.hero-1-txt {
-  position: absolute;
+.hero-1-txt, .hero-2-txt {
   bottom: 0px;
   left: 16px;
-  opacity: 0;
-  transition: opacity .25s ease-in-out;
+  position: absolute;
 }
 
-.fade-in {
-  opacity: 1;
+.back-image {
+  position: fixed;
+  text-align: center;
+  width: 100%;
+  z-index: -3;
+
+  img {
+    height: 100vh;
+    width: auto;
+  }
+}
+
+.hidden {
+  display: none;
 }
