@@ -1,7 +1,8 @@
 import $ from 'jquery'
 import scrollama from 'scrollama';
 
-require('./index.scss')
+require('./index.scss');
+require('../node_modules/animate.css/animate.css');
 
 // instantiate the scrollama
 const scroller = scrollama();
@@ -22,9 +23,9 @@ scroller
     }
   })
   .onStepExit((obj, index) => {
-    if(obj.index === 0) {
-      $('.hero-1-txt').removeClass('fade-in');
-    }
+    // if(obj.index === 0) {
+    //   $('.hero-1-txt').removeClass('fade-in');
+    // }
   })
   .onContainerEnter(() => console.log('Eventing cont-enter'))
   .onContainerExit(() => console.log('Eventing cont-exit'))
