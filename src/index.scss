@@ -9,8 +9,8 @@
 }
 
 .hero-1-txt, .hero-2-txt {
-  bottom: 0px;
-  left: 16px;
+  top: 0px;
+  left: 25px;
   position: absolute;
 }
 
@@ -29,3 +29,31 @@
 .hidden {
   display: none;
 }
+
+.scroll__graphic {
+			position: absolute;
+			top: 0;
+			left: 0;
+			bottom: auto;
+			background-color: #fff;
+			-webkit-transform: translate3d(0, 0, 0);
+			-moz-transform: translate3d(0, 0, 0);
+			transform: translate3d(0, 0, 0);
+		}
+		.scroll__graphic.is-fixed {
+			position: fixed;
+		}
+		.scroll__graphic.is-bottom {
+			bottom: 0;
+			top: auto;
+		}
+		.chart {
+			position: absolute;
+			right: 1rem;
+			top: 50%;
+			-moz-transform: translateY(-50%);
+			-webkit-transform: translateY(-50%);
+			transform: translateY(-50%);
+			background-color: #ddd;
+			border: 1px solid #000;
+		}

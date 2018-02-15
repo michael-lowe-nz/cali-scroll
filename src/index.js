@@ -13,15 +13,16 @@ scroller
     step: '.scroll__text .step', // required
     container: '.scroll', // required (for sticky)
     graphic: '.scroll__graphic', // required (for sticky)
-    offset: 0.5, // optional, default = 0.5
-    debug: false // optional, default = false
+    offset: 0.4, // optional, default = 0.5
+    debug: true // optional, default = false
   })
   .onStepEnter((obj, index, another) => {
     console.log('Step enter:', obj, index, another)
     if(obj.index === 0) {
-      console.log('adding slideInLeft');
-      $('.hero-1-txt').removeClass('hidden');
-      $('.hero-1-txt').addClass('slideInLeft');
+      setTimeout(() => {
+        $('.hero-1-txt').removeClass('hidden');
+        $('.hero-1-txt').addClass('slideInLeft');
+      }, 1000)
     }
   })
   .onStepExit((obj, index) => {
