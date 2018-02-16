@@ -1,5 +1,12 @@
 const path = require('path');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
+const LiveReloadPlugin = require('webpack-livereload-plugin');
+
+module.exports = {
+  plugins: [
+    new LiveReloadPlugin(options)
+  ]
+}
 
 module.exports = {
   entry: "./src/index.js",
