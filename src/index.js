@@ -8,9 +8,8 @@ const scroller = scrollama();
 scroller
   .setup({
     step: '.step', // required
-    // container: '.scroll', // required (for sticky)
-    offset: 0.5, // optional, default = 0.5
-    debug: true // optional, default = false
+    offset: 0.4,
+    debug: false
   })
   .onStepEnter(response => {
     console.log('response', response.element)

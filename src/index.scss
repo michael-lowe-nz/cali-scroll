@@ -5,10 +5,15 @@
 
 .hero-txt {
   top: 50px;
+  width: 100%;
+  color: #fff;
+  -vendor-animation-duration: 5s;
+}
+
+.text-container {
   margin: 0 auto;
   position: absolute;
   width: 100%;
-  color: #fff;
 }
 
 .hero-container {
